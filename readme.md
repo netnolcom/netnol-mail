@@ -48,6 +48,27 @@
     </div>
     <br/>
     <div>
+        <h3>Identity & Governance Framework</h3>
+        <ul>
+            <li>
+                <h4>Sovereign Identity & Unified Access</h4>
+                <p>
+                    Authentication in Netnol Mail is anchored to the <strong>Netnol ID</strong>, the user’s immutable and sovereign identity root. Through a single login, the client locally decrypts access keys to provide a consolidated dashboard of all attached Organizations and inboxes. This aggregation occurs strictly on the client side; on the back-end, isolation is absolute. An Organization is mathematically incapable of detecting the existence of other organizations linked to the same ID. By utilizing <strong>Zero-Knowledge Proofs (ZKP)</strong>, the server validates identity without ever touching passwords or private keys, rendering individual accounts deliberately irrecoverable by any third party.
+                </p>
+            </li>
+            <li>
+                <h4>Organizational Architecture, MMK, and Plans</h4>
+                <p>
+                    All Netnol Mail instances operate on a unified <strong>Master Management Key (MMK)</strong> engine, with permission policies varying by plan. Upon registration, an <strong>Individual Organization</strong> is automatically pre-created. In this mode, the MMK operates in a restricted state, making it impossible to add any user other than the owner. While the owner can manage multiple inboxes, domains, and storage, all resources remain permanently tethered and limited to their specific ID. 
+                </p>
+                <p>
+                    In <strong>Team and Enterprise</strong> plans, the MMK expands to allow administrators to attach inboxes to third-party IDs and manage external members. Since the technical foundation is identical, transitioning between plans (upgrade/downgrade) is a seamless reconfiguration of resource limits and MMK sharing permissions, requiring no data migration. Each Organization, including the personal one, maintains its own independent <strong>billing cycle</strong>, allowing a single user to manage personal and corporate contexts with total administrative autonomy and cost segregation.
+                </p>
+            </li>
+        </ul>
+    </div>
+    <br/>
+    <div>
         <h3>License</h3>
         <p>
             Netnol Mail is licensed under the <strong>AGPLv3</strong>. The primary motivation for this choice is to
